@@ -1,0 +1,121 @@
+*{
+	list-style-type : none; font-family: Arial, ubuntu;
+  ;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+    
+}
+.top{
+    font-family: Arial, Helvetica, ubuntu;
+    color: #003333;
+}
+.top h1{
+  letter-spacing: -0.03em;
+    margin-top: -40px;
+    font-weight: bold;
+    font-size: 60px;
+    font-variant: small-caps;
+    
+}
+.top h2{
+
+  text-shadow:
+  
+
+0px 0px 3px;
+  
+}
+.mail{
+    position: fixed;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    margin-left: 200px;
+    font-size: 11px;
+}
+.mail .inputtext{
+  color:#7AA484;
+
+}
+.mail .inputtext :hover{color: red;}
+
+.social-buttons{ margin-left:550px; position: fixed;
+  margin-top: 40px;
+
+}
+
+.bas{
+  margin-left: 110px;
+  margin-top: 100px;
+}
+ul#bas li { 
+ font-size: 12px; display: inline; 
+  word-spacing: 1px;padding : 0 0.8em} 
+  #bas li a{
+     text-decoration: none; font-family: Arial, Helvetica, ubuntu;
+    color: #003333
+
+  }
+#bas li :hover {
+color:#2E8B57;
+background-color: #98FB98;
+text-decoration:none;
+cursor: pointer; ;
+}
+
+
+@keyframes AutoSlide {
+  0%, 20%,{ left: -350px }/* première image et dernière*/
+  
+  
+  20%, 40% { left: -700px } /*2ème image*/
+ 
+  35%, 65% { left: -1100px } /*4ème image*/
+  65%, 95% { left: -400px } /*5ème image*/
+  
+}
+
+
+#slideshow {
+  
+
+  position: relative; /*le parent positionné*/
+  
+  width: 780px; /*limite en largeur (1 élément du slideshow) ; j'ai modifié la largeur de 150px à 640px*/
+  
+  height: 300px; /*limite en hauteur*/
+  cursor: help;
+  
+ 
+  
+
+  
+}
+
+#sContent li {
+  
+  display: inline; /*on aligne les éléments du slideshow*/
+  
+}
+
+#sContent {
+  
+  position: absolute; /*on sort l'élément du flux*/
+  
+  top: 0; /*on le positionne précisément dans ...*/
+  
+  left: 0; /*l'angle haut gauche de son parent positionné*/
+  
+  width: 2250px; /*j'ai modifié la largeur totale de mon slideshow = 8 x 640 px*/
+  margin: 0;
+  padding: 0;
+  animation-name: AutoSlide;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+}
+
+  
